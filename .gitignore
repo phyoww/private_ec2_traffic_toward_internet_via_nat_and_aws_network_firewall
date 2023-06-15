@@ -1,0 +1,7 @@
+testkeypair.pem
+public.pub
+*.tfstate
+.DS_Store
+.terraform/*
+*.tftstate.backup
+*.tftstate.*.backup
