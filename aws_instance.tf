@@ -16,7 +16,7 @@ resource "aws_instance" "ec2jumphost" {
   connection {
     type = "ssh"
     user = "ec2-user"
-    private_key = file("/Users/phyowaiwin/mydev-boxes/python-dev-box/Terraform-stuffs/ec2-with-igw_nat_cloudideastar/testkeypair.pem")
+    private_key = file("/Users/xxxxxx/testkeypair.pem")
     host = aws_instance.ec2jumphost.public_ip
   }
 
