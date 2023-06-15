@@ -35,7 +35,7 @@ Copy the testkeypair.pem file from local machine to EC2 Public EC2
 3. Change permission > chmod 400 testkey.pem
 4. SSH to private EC2 via public EC2
 
-## Test after  STEP 2 from Private EC2
+## Test after  STEP 3 from Private EC2
 1. curl http://public_ip
 2. curl https://www.facebook.com
 3. curl https://www.yahoo.com
