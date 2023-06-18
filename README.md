@@ -30,9 +30,9 @@
 ## STEP - 3 to access Private EC2 from Public EC2
 
 Copy the testkeypair.pem file from local machine to EC2 Public EC2
-1. cat testkey.pem > copy 
-2. ssh to  public ec2 and past there > vi testkey.pem
-3. Change permission > chmod 400 testkey.pem
+1. cat testkeypair.pem > copy 
+2. ssh to  public ec2 and past there > vi testkeypair.pem
+3. Change permission > chmod 400 testkeypair.pem
 4. SSH to private EC2 via public EC2
 
 ## Test after  STEP 3 from Private EC2
