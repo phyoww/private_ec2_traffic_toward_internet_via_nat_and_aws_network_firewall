@@ -35,6 +35,18 @@ Copy the testkeypair.pem file from local machine to EC2 Public EC2
 3. Change permission > chmod 400 testkeypair.pem
 4. SSH to private EC2 via public EC2
 
+## STEP - 4 FQDN Firewall rule : workaround solution Lambda stack script is a YAML file format, FQDN (doains) that are resolved by the Lambda function and updating a Network Firewall rule variable with the result of the DNS qery.
+1. Upload "LambdaFirewallRule.yml" file to cloudformation with aws console access.
+2. Create stack > "upload a template file "
+3. Lambda rule created at > VPC dashboard > " Network Firewall rule group "
+4. Go to firewall policy and attach the created Lambda rule
+5. FQDN that are resolved by the Lambda rule
+
+![header image](step1.png)
+![header image](step2.png)
+![header image](step3.png)
+
+
 ## Test after  STEP 3 from Private EC2
 1. curl http://public_ip
 2. curl https://www.facebook.com
