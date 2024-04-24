@@ -9,7 +9,7 @@
 
 1. Go to Endpoint>subnet -copy the FW subnet's "Network interface ID"
 2. Go to Route table >IGW Route table > Edge associate > Edit edge associate > Check (Attach Internet Gateway) 
-3. On IGW Route Table ,Add route EC2 IP/24 to FW interface <10.0.2.0/24 - vpcexxxx>
+3. On IGW Route Table ,Add route EC2 IP/24 to FW interface (Gateway Load Balancer Endpoint) <10.0.2.0/24 - vpcexxxx>
 4. On Public Route Table > Change Default route to FW subnet interface ID from IGW on EC2 public route table <0.0.0.0/0 - vpcexxxx>
 
 
